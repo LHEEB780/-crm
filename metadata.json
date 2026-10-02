@@ -1,0 +1,6 @@
+{
+  "name": "CRM System",
+  "description": "An advanced, professional Bilingual CRM System (Arabic & English) with an elegant Dashboard, Client Management, Companies/Contracts CRM, Sales Pipeline (Leads, Invoices), Task Priority Management, Calendar view, RBAC roles, and beautiful Dark Blue & Orange theme.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

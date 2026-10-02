@@ -1,0 +1,862 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "أحمد المدير",
+      "email": "admin@crm.com",
+      "role_id": 1,
+      "role": "super_admin",
+      "phone": "+966501234567",
+      "status": "active",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "name": "سارة الحميد",
+      "email": "sara.sales@crm.com",
+      "role_id": 2,
+      "role": "sales_manager",
+      "phone": "+966507654321",
+      "status": "active",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 3,
+      "name": "خالد السليمان",
+      "email": "khaled.emp@crm.com",
+      "role_id": 3,
+      "role": "sales_employee",
+      "phone": "+966504567890",
+      "status": "active",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "عبدالرحمن الشهري",
+      "email": "shahri@gmail.com",
+      "phone": "+966501112223",
+      "company_name": "مجموعة الراجحي الاستثمارية",
+      "company_id": 1,
+      "status": "active_client",
+      "type": "corporate",
+      "address": "الرياض، العليا",
+      "notes": "عميل ممتاز ومتجاوب دائماً",
+      "manager_id": 2,
+      "archived_at": null,
+      "created_at": "2026-06-08T18:53:03.260Z",
+      "emails": [
+        {
+          "id": "email-bot-1780952100488",
+          "subject": "مقترح ترقية الحلول الرقمية (AI Draft Proposal)",
+          "body": "عزيزنا عبدالرحمن الشهري،\n\nبناءً على طلبكم ومعايير الحوسبة السحابية لديكم، يقترح نظامنا ترقية البنية التحتية لديكم وزيادة عدد تراخيص الخوادم بمعدل 20% لتحقيق مرونة تشغيل تصل إلى 99.99%.\n\nيسعدنا مناقشة التفاصيل في مكالمتنا القادمة.\n\nمع التحية،\nروبوت المبيعات الآلي",
+          "date": "2026-06-08T20:55:00.488Z",
+          "from": "sales-assistant@hypersolutions.com",
+          "folder": "Drafts"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "خليل اليافعي",
+      "email": "yafei@hotmail.com",
+      "phone": "+966502223334",
+      "company_name": "شركة الاتصالات السعودية (STC)",
+      "company_id": 2,
+      "status": "negotiating",
+      "type": "corporate",
+      "address": "الرياض، المرسلات",
+      "notes": "مهتم بعقود ترقية السيرفرات السنوية",
+      "manager_id": 3,
+      "archived_at": null,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 3,
+      "name": "فيصل المطيري",
+      "email": "faisal.m@stc.com.sa",
+      "phone": "+966503334445",
+      "company_name": "شركة الاتصالات السعودية (STC)",
+      "company_id": 2,
+      "status": "lead",
+      "type": "corporate",
+      "address": "الرياض القدس",
+      "notes": "مستهدف لتطبيق مبيعات التجزئة للشركة",
+      "manager_id": 3,
+      "archived_at": null,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 4,
+      "name": "نواف العبدالله",
+      "email": "nawaf@example.com",
+      "phone": "+966504445556",
+      "company_name": "مؤسسة الابتكارات المتجددة",
+      "status": "new",
+      "type": "individual",
+      "address": "جدة، الحمراء",
+      "notes": "مهتم بالحصول على استشارة تهيئة البنية التحتية",
+      "manager_id": 2,
+      "archived_at": null,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "مجموعة الراجحي الاستثمارية",
+      "email": "info@alrajhigroup.com",
+      "phone": "920011122",
+      "website": "www.alrajhigroup.com",
+      "industry": "الاستثمار والمقاولات",
+      "address": "الرياض، العليا",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "name": "شركة الاتصالات السعودية (STC)",
+      "email": "corporate@stc.com.sa",
+      "phone": "900",
+      "website": "www.stc.com.sa",
+      "industry": "الاتصالات والتقنية",
+      "address": "الرياض، مجمع الملك عبدالعزيز للاتصالات",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "name": "الفرع الرئيسي",
+      "city": "الرياض",
+      "address": "طريق الملك فهد",
+      "manager_name": "عبدالرحمن الراجحي",
+      "phone": "+966500000001",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "company_id": 1,
+      "name": "فرع المنطقة الغربية",
+      "city": "جدة",
+      "address": "شارع التحلية",
+      "manager_name": "سعيد الغامدي",
+      "phone": "+966500000002",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "name": "مروان العتيبي",
+      "position": "مدير المشتريات",
+      "email": "m.otaibi@alrajhigroup.com",
+      "phone": "+966551234511",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "company_id": 2,
+      "name": "م. فهد القرني",
+      "position": "مدير البنية التحتية والشبكات",
+      "email": "f.qarni@stc.com.sa",
+      "phone": "+966551234522",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "title": "عقد توريد برمجيات سحابية وإدارة شبكات",
+      "value": 450000,
+      "start_date": "2026-01-01",
+      "end_date": "2026-12-31",
+      "status": "active",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "company_id": 2,
+      "title": "عقد استشارات فنية وتحليل أمان سيرفرات",
+      "value": 120000,
+      "start_date": "2026-03-01",
+      "end_date": "2026-09-01",
+      "status": "active",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": 1,
+      "client_id": 2,
+      "source": "الموقع الإلكتروني",
+      "score": 85,
+      "status": "qualified",
+      "expected_revenue": 75000,
+      "priority": "high",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "client_id": 3,
+      "source": "وسائل التواصل الاجتماعي",
+      "score": 60,
+      "status": "qualified",
+      "expected_revenue": 50000,
+      "priority": "medium",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 3,
+      "client_id": 4,
+      "source": "توصية مباشرة",
+      "score": 40,
+      "status": "new",
+      "expected_revenue": 20000,
+      "priority": "low",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": 1,
+      "lead_id": 1,
+      "title": "ترقية تراخيص سيرفر STC",
+      "stage": "proposal",
+      "probability": 60,
+      "estimated_value": 75000,
+      "close_date": "2026-07-15",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "lead_id": 2,
+      "title": "تطبيق الهاتف لخدمات العملاء STC",
+      "stage": "discovery",
+      "probability": 30,
+      "estimated_value": 50000,
+      "close_date": "2026-09-30",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": 1,
+      "opportunity_id": 1,
+      "title": "صفقة تراخص اس تي سي المرحلة الأولى",
+      "value": 75000,
+      "status": "active",
+      "contract_signed": false,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": 1,
+      "client_id": 2,
+      "subject": "عرض السعر المتكامل لتطوير البرامج والمقاسم",
+      "total_amount": 80000,
+      "discount": 5000,
+      "status": "sent",
+      "valid_until": "2026-08-01",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "client_id": 1,
+      "invoice_number": "INV-2026-0001",
+      "total_amount": 517500,
+      "tax": 67500,
+      "status": "paid",
+      "due_date": "2026-04-30",
+      "paid_at": "2026-06-08T18:53:03.260Z",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "client_id": 2,
+      "invoice_number": "INV-2026-0002",
+      "total_amount": 23000,
+      "tax": 3000,
+      "status": "unpaid",
+      "due_date": "2026-06-30",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية",
+      "description": "عقد اجتماع مراجعة عبر Zoom لمناقشة التفاصيل وتنزيل التراخيص واحتياجات السيرفرات",
+      "priority": "high",
+      "status": "in_progress",
+      "due_date": "2026-06-10T14:00:00Z",
+      "assigned_to_id": 3,
+      "client_id": 2,
+      "comments": [
+        {
+          "id": "c1",
+          "user_name": "سارة الحميد",
+          "content": "تم حجز موعد الزووم وإرسال رابط اللقاء لجميع الأطراف المعنية.",
+          "created_at": "2026-06-08T16:53:03.260Z"
+        },
+        {
+          "id": "c2",
+          "user_name": "أحمد المدير",
+          "content": "ممتاز، يرجى التجهيز بملف العرض الفني المحدث قبل ساعة من اللقاء.",
+          "created_at": "2026-06-08T17:53:03.260Z"
+        }
+      ],
+      "created_at": "2026-06-08T18:53:03.260Z",
+      "subtasks": [
+        {
+          "id": "st-1-1",
+          "title": "إعداد ومراجعة العرض التقديمي الفني",
+          "completed": true,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        },
+        {
+          "id": "st-1-2",
+          "title": "حصر تراخيص السيرفرات وقواعد البيانات المطلوبة",
+          "completed": false,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        },
+        {
+          "id": "st-1-3",
+          "title": "مشاركة رابط الاجتماع وجدول الأعمال مع مهندسي STC",
+          "completed": true,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "استكمال توقيع عقد مجموعة الراجحي الاستثمارية وتنزيل الدفعة الأولى",
+      "description": "إحضار العقد المصدق من الغرفة التجارية وتسليمه لمدير الحسابات",
+      "priority": "urgent",
+      "status": "pending",
+      "due_date": "2026-06-08T09:00:00Z",
+      "assigned_to_id": 2,
+      "client_id": 1,
+      "comments": [
+        {
+          "id": "c3",
+          "user_name": "سارة الحميد",
+          "content": "أفاد العميل بأن التوقيع جاهز وبانتظار مندوبنا غداً صباحاً للتسليم.",
+          "created_at": "2026-06-08T15:53:03.260Z"
+        }
+      ],
+      "created_at": "2026-06-08T18:53:03.260Z",
+      "subtasks": [
+        {
+          "id": "st-2-1",
+          "title": "طباعة نسخ العقد الرسمية ومراجعة البنود القانونية",
+          "completed": true,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        },
+        {
+          "id": "st-2-2",
+          "title": "تصديق العقد من الغرفة التجارية بالرياض",
+          "completed": false,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        },
+        {
+          "id": "st-2-3",
+          "title": "إيداع سند القبض للدفعة الأولى وتأكيد مدير الحسابات",
+          "completed": false,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "الاتصال بالعميل الجديد نواف العبدالله للترحيب وشرح الميزات",
+      "description": "مكالمة ترحيبية قصيرة لمعرفة نوع الأعمال والخدمات المطلوبة لشركته الناشئة",
+      "priority": "low",
+      "status": "completed",
+      "due_date": "2026-06-05T11:30:00Z",
+      "assigned_to_id": 3,
+      "client_id": 4,
+      "comments": [
+        {
+          "id": "c4",
+          "user_name": "خالد مبيعات",
+          "content": "تم الاتصال بالعميل وأبدى ترحيباً كبيراً، يفضل التواصل الأسبوع المقبل لاستلام كراسة الشروط المعيارية.",
+          "created_at": "2026-06-08T14:53:03.260Z"
+        }
+      ],
+      "created_at": "2026-06-08T18:53:03.260Z",
+      "subtasks": [
+        {
+          "id": "st-3-1",
+          "title": "مراجعة بيانات تسجيل الشركة ونشاطها التجاري",
+          "completed": true,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        },
+        {
+          "id": "st-3-2",
+          "title": "إجراء المكالمة الترحيبية وتحديد المتطلبات الأساسية",
+          "completed": true,
+          "created_at": "2026-10-02T23:02:37.250Z"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": 5,
+      "user_id": 3,
+      "title_ar": "⚠️ مهمة عالية الأهمية متأخرة!",
+      "title_en": "⚠️ High Task Overdue!",
+      "content_ar": "تنبيه تلقائي: المهمة \"سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية\" قد تجاوزت تاريخ الاستحقاق المحدد (١٠‏/٦‏/٢٠٢٦، ١٤:٠٠:٠٠). يرجى تلبيتها فوراً. [Overdue Alert][Task #1]",
+      "content_en": "Automated Reminder: The high task \"سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية\" has passed its scheduled due date (6/10/2026, 2:00:00 PM). Please act on it immediately. [Overdue Alert][Task #1]",
+      "type": "task_alert",
+      "is_read": false,
+      "created_at": "2026-10-02T22:53:00.743Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "title_ar": "⚠️ مهمة عاجلة جداً متأخرة!",
+      "title_en": "⚠️ Urgent Task Overdue!",
+      "content_ar": "تنبيه تلقائي: المهمة \"استكمال توقيع عقد مجموعة الراجحي الاستثمارية وتنزيل الدفعة الأولى\" قد تجاوزت تاريخ الاستحقاق المحدد (٨‏/٦‏/٢٠٢٦، ٠٩:٠٠:٠٠). يرجى تلبيتها فوراً. [Overdue Alert][Task #2]",
+      "content_en": "Automated Reminder: The urgent task \"استكمال توقيع عقد مجموعة الراجحي الاستثمارية وتنزيل الدفعة الأولى\" has passed its scheduled due date (6/8/2026, 9:00:00 AM). Please act on it immediately. [Overdue Alert][Task #2]",
+      "type": "task_alert",
+      "is_read": false,
+      "created_at": "2026-06-08T18:53:03.656Z"
+    },
+    {
+      "id": 1,
+      "user_id": 2,
+      "title_ar": "مهمة عاجلة مستحقة قريباً",
+      "title_en": "Urgent task due soon",
+      "content_ar": "استكمال توقيع عقد مجموعة الراجحي الاستثمارية مستحق في 08 يونيو",
+      "content_en": "Completing the contract of Al Rajhi group is due on June 08",
+      "type": "task_alert",
+      "is_read": false,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "title_ar": "صفقة جديدة مرشحة للتأهيل",
+      "title_en": "New qualified lead",
+      "content_ar": "تم تصنيف العميل خليل اليافعي كعميل مؤهل من قبل نظام الفرز الإلكتروني بمعدل 85 نقطة",
+      "content_en": "Client Khalil Al-Yafei qualified via sorting logic with score 85",
+      "type": "lead_update",
+      "is_read": false,
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "title_ar": "🤖 روبوت المراسلات: بريد ذكي مجهز",
+      "title_en": "🤖 AI Copywriter: Custom email compiled",
+      "content_ar": "تمت صياغة مقترح مبيعات وأرشفته كمسودة في سجلات العميل: \"عبدالرحمن الشهري\" للتوقيع.",
+      "content_en": "Drafted technical customer proposal template for client: \"عبدالرحمن الشهري\".",
+      "type": "system_event",
+      "is_read": false,
+      "created_at": "2026-06-08T20:55:00.488Z"
+    }
+  ],
+  "activity_logs": [
+    {
+      "id": 13,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "target_type": "Task",
+      "target_id": 1,
+      "description_ar": "حذف مهمة فرعية من المهمة: سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية",
+      "description_en": "Deleted a subtask from task: سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T23:05:31.643Z"
+    },
+    {
+      "id": 12,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "target_type": "Task",
+      "target_id": 1,
+      "description_ar": "إضافة مهمة فرعية جديدة: \"مهمة فرعية اختبارية للتأكد من الدقة\" إلى المهمة \"سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية\"",
+      "description_en": "Added subtask: \"مهمة فرعية اختبارية للتأكد من الدقة\" to task \"سلسلة مقابلات STC الفنية لتحديد المتطلبات الأساسية\"",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T23:05:31.623Z"
+    },
+    {
+      "id": 11,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تعديل الإعدادات العامة للنظام",
+      "description_en": "Updated general system configuration",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T22:57:26.900Z"
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تعديل الإعدادات العامة للنظام",
+      "description_en": "Updated general system configuration",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T22:57:19.746Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تعديل الإعدادات العامة للنظام",
+      "description_en": "Updated general system configuration",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T22:56:58.245Z"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تعديل الإعدادات العامة للنظام",
+      "description_en": "Updated general system configuration",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-02T22:56:53.561Z"
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تشغيل روبوت الذكاء الاصطناعي يدوياً: \"منشئ المراسلات وصياغة المعاملات\"",
+      "description_en": "Executed AI Robot run: \"AI Copywriter & SLA Dispatcher\"",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T20:55:00.488Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "update",
+      "description_ar": "تفعيل روبوت الذكاء الاصطناعي: \"منشئ المراسلات وصياغة المعاملات\"",
+      "description_en": "Enabled AI Robot: \"AI Copywriter & SLA Dispatcher\"",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T20:54:39.901Z"
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "user_name": "سارة الحميد",
+      "action": "update",
+      "target_type": "Client",
+      "target_id": 3,
+      "description_ar": "تعديل حالة الفرع المحتمل إلى \"qualified\"",
+      "description_en": "Updated lead status to \"qualified\"",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T18:59:13.195Z"
+    },
+    {
+      "id": 4,
+      "user_id": 2,
+      "user_name": "سارة الحميد",
+      "action": "login",
+      "description_ar": "تم تبديل المستخدم النشط إلى \"سارة الحميد\"",
+      "description_en": "Simulated active user switched to \"سارة الحميد\"",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T18:58:48.180Z"
+    },
+    {
+      "id": 1,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "login",
+      "description_ar": "تسجيل دخول ناجح لمدير النظام أحمد المدير",
+      "description_en": "Successful login of System Admin Ahmed Al-Mudeer",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "user_name": "أحمد المدير",
+      "action": "create",
+      "target_type": "Client",
+      "target_id": 4,
+      "description_ar": "إضافة عميل جديد نواف العبدالله في قاعدة البيانات",
+      "description_en": "Added new client Nawaf Al-Abdullah to database",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "user_name": "سارة الحميد",
+      "action": "update",
+      "target_type": "Task",
+      "target_id": 2,
+      "description_ar": "تعديل حالة مهمة عقد الراجحي وتعيين الأولوية إلى عاجلة",
+      "description_en": "Modified contract task state to urgent",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-08T18:53:03.260Z"
+    }
+  ],
+  "settings": {
+    "company_name_ar": "شركة الحلول البرمجية الفائقة",
+    "company_name_en": "Nahdi Sales CRM Channels",
+    "address_ar": "الرياض، المملكة العربية السعودية",
+    "address_en": "Riyadh, Kingdom of Saudi Arabia",
+    "email": "info@hypersolutions.com",
+    "phone": "+966112223333",
+    "tax_rate": 15,
+    "currency_ar": "ر.س",
+    "currency_en": "SAR",
+    "primary_color": "#0F172A",
+    "secondary_color": "#06B6D4",
+    "mail_driver": "smtp",
+    "mail_host": "smtp.mailtrap.io",
+    "mail_port": 2525,
+    "mail_username": "crm-notify",
+    "mail_encryption": "tls",
+    "backup_interval": "daily",
+    "logo_url": ""
+  },
+  "ai_robots": [
+    {
+      "id": "robot-leads-qualifier",
+      "name_ar": "مساعد تأهيل صفقات المبيعات (AI Qualifier)",
+      "name_en": "AI Leads Qualifier Agent",
+      "role_description_ar": "مسؤول عن تصفية وفلترة بيانات العملاء المحتملين تلقائياً وتقييم ملائمة وموثوقية الصفقة من 100 لتوجيه طاقم المبيعات.",
+      "role_description_en": "Scans and qualifies incoming client leads automatically, calculating deal readiness and score out of 100 to guide sales agents.",
+      "avatar": "/src/assets/images/leads_qualifier_avatar_1780951817987.png",
+      "enabled": true,
+      "type": "leads_qualifier",
+      "last_action_ar": "جاهز لتصفية وتأهيل الصفقة التالية فور دخولها.",
+      "last_action_en": "Standing ready for incoming lead processing and qualification.",
+      "last_action_at": "2026-06-08T19:20:10.851Z",
+      "run_count": 5,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "robot-task-escalator",
+      "name_ar": "مدير المتابعة والتنبيهات المجدولة",
+      "name_en": "AI Task Escalator & Auto-Reminder",
+      "role_description_ar": "يقوم بقراءة تواريخ المهام المعلقة والمتأخرة وإرسال إشعارات تلقائية وإنشاء تعليقات تحذيرية لتسريع عجلة الإنتاج.",
+      "role_description_en": "Monitors upcoming or overdue tasks, sending push warnings and posting automatic reminder comments on tasks to increase speed.",
+      "avatar": "/src/assets/images/task_escalator_avatar_1780951833947.png",
+      "enabled": true,
+      "type": "task_escalator",
+      "last_action_ar": "تم تنبيه الموظفين بخصوص 3 مهام حرجة قريبة الاستحقاق.",
+      "last_action_en": "Identified and flagged 3 near-overdue task targets.",
+      "last_action_at": "2026-06-08T19:20:10.851Z",
+      "run_count": 12,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "robot-email-writer",
+      "name_ar": "منشئ المراسلات وصياغة المعاملات",
+      "name_en": "AI Copywriter & SLA Dispatcher",
+      "role_description_ar": "صياغة وتعديل مسودات المراسلات الرسمية للشركاء وعقود الاندماج ووثائق NDA تلقائياً وإلحاقها ببريد العميل.",
+      "role_description_en": "Drafts hyper-personalized reply templates, legal NDA terms, and professional formal follow-up emails for company leads.",
+      "avatar": "/src/assets/images/email_writer_avatar_1780951847210.png",
+      "enabled": true,
+      "type": "email_writer",
+      "last_action_ar": "صاغ الروبوت مسودة مقترح بريد احترافي وأرسله لقسم المسودات للعميل: \"عبدالرحمن الشهري\".",
+      "last_action_en": "Successfully generated a draft follow-up proposal email for client \"عبدالرحمن الشهري\".",
+      "last_action_at": "2026-06-08T20:55:00.488Z",
+      "run_count": 9,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "robot-financial-analyst",
+      "name_ar": "مركز الذكاء الاصطناعي للتدريب والاستشارات المالية",
+      "name_en": "AI Training & Financial Consulting Center",
+      "role_description_ar": "يقوم بتحليل فواتير ومصروفات الـ CRM وتدريب النظام على خوارزميات الاسترداد وتوفير استشارات التدفق المالي والضريبي الذكي.",
+      "role_description_en": "Audits pending balances, trains systems on recovery models, and provides financial cashflow consulting and tax planning.",
+      "avatar": "/src/assets/images/ai_hub_avatar_1780951859398.png",
+      "enabled": true,
+      "type": "financial_analyst",
+      "last_action_ar": "تمت مراجعة الفواتير واحتساب الضرائب ومذكرة التدفق المالي بنجاح.",
+      "last_action_en": "Audited non-paid invoice ratios and compiled tax projection.",
+      "last_action_at": "2026-06-08T19:20:10.851Z",
+      "run_count": 19,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "robot-sentiment-analyzer",
+      "name_ar": "روبوت تحليل المشاعر ورضا العملاء (AI Sentiment Guardian)",
+      "name_en": "AI Sentiment & Customer Support Guardian",
+      "role_description_ar": "يقوم بمراقبة تفاعلات وصوت العميل في التذاكر والمهام، واحتساب نقاط السعادة والولاء CSAT، وتنبيه الإدارة فور رصد بوادر تراجع المشاعر.",
+      "role_description_en": "Monitors client communications and ticket sentiment, calculating Customer Satisfaction (CSAT) scores and warning supervisors if satisfaction drops.",
+      "avatar": "/src/assets/images/writer_bot_avatar_1780951339747.png",
+      "enabled": true,
+      "type": "sentiment_analyzer",
+      "last_action_ar": "جاهز لتحليل مشاعر وقنوات التواصل مع العملاء.",
+      "last_action_en": "Ready to analyze customer interactions and feedback sentiment.",
+      "last_action_at": "2026-10-02T22:53:00.199Z",
+      "run_count": 3,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "robot-retention-predictor",
+      "name_ar": "روبوت استبقاء المشتركين وترقيات العقود (AI Retention Engine)",
+      "name_en": "AI Retention & Contract Expansion Engine",
+      "role_description_ar": "مسؤول عن فحص وتوقع احتمالات تجديد واكتشاف فرص البيع العكسي للعملاء كترقية السيرفرات أو الباقات وصياغة عروض مرشحة.",
+      "role_description_en": "Predicts client churn & subscription renewal likelihoods, uncovering hyper-targeted cross-sell opportunities to capture contract expansions.",
+      "avatar": "/src/assets/images/finance_bot_avatar_1780951352361.png",
+      "enabled": true,
+      "type": "retention_predictor",
+      "last_action_ar": "جاهز لمسح العقود وتوقع نسب تجديد واستبقاء العملاء.",
+      "last_action_en": "Ready to audit active contract cycles and predict retention performance.",
+      "last_action_at": "2026-10-02T22:53:00.199Z",
+      "run_count": 2,
+      "schedule_enabled": false,
+      "schedule_start": "09:00",
+      "schedule_end": "17:00",
+      "schedule_days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "agent_collaborations": [
+    {
+      "id": "collab-init-1",
+      "workflow_id": "wf-swarm-initial",
+      "step_number": 1,
+      "from_robot_id": "robot-leads-qualifier",
+      "from_robot_name_ar": "مساعد تأهيل صفقات المبيعات",
+      "from_robot_name_en": "AI Leads Qualifier Agent",
+      "to_robot_id": "robot-email-writer",
+      "to_robot_name_ar": "منشئ المراسلات وصياغة المعاملات",
+      "to_robot_name_en": "AI Copywriter & SLA Dispatcher",
+      "message_ar": "@منشئ_المراسلات تم فحص وتأهيل سجل العميل \"خليل اليافعي\" (شركة الاتصالات السعودية STC) بنجاح بمعدل جاهزية 85% وقيمة مقدرة 75,000 ر.س. يرجى إعداد مسودة عرض الأسعار والمواصفات الفنية فوراً.",
+      "message_en": "@AI_Copywriter Verified and qualified client \"Khalil Al-Yafei\" (STC) with 85% readiness score. Please compile technical proposal draft.",
+      "action_taken_ar": "تأهيل العميل وترقية درجته إلى 85 نقطة في قائمة صفقات المبيعات",
+      "action_taken_en": "Qualified lead and updated readiness index to 85/100",
+      "target_entity": "خليل اليافعي",
+      "created_at": "2026-10-02T19:53:00.199Z"
+    },
+    {
+      "id": "collab-init-2",
+      "workflow_id": "wf-swarm-initial",
+      "step_number": 2,
+      "from_robot_id": "robot-email-writer",
+      "from_robot_name_ar": "منشئ المراسلات وصياغة المعاملات",
+      "from_robot_name_en": "AI Copywriter & SLA Dispatcher",
+      "to_robot_id": "robot-task-escalator",
+      "to_robot_name_ar": "مدير المتابعة والتنبيهات المجدولة",
+      "to_robot_name_en": "AI Task Escalator & Auto-Reminder",
+      "message_ar": "@مدير_المتابعة تم صياغة مسودة العرض التقني والـ SLA وإيداعها في مسودات بريد العميل \"خليل اليافعي\". أرجو جدولة مهمة تواصل ومتابعة عاجلة.",
+      "message_en": "@AI_Escalator Proposal and SLA drafted into client drafts folder. Please schedule an urgent follow-up task on the CRM calendar.",
+      "action_taken_ar": "صياغة وثيقة العرض التقني وإيداعها في مسودات العميل",
+      "action_taken_en": "Drafted technical proposal and committed to client email drafts",
+      "target_entity": "خليل اليافعي",
+      "created_at": "2026-10-02T20:05:00.199Z"
+    },
+    {
+      "id": "collab-init-3",
+      "workflow_id": "wf-swarm-initial",
+      "step_number": 3,
+      "from_robot_id": "robot-task-escalator",
+      "from_robot_name_ar": "مدير المتابعة والتنبيهات المجدولة",
+      "from_robot_name_en": "AI Task Escalator & Auto-Reminder",
+      "to_robot_id": "robot-financial-analyst",
+      "to_robot_name_ar": "مركز الذكاء الاصطناعي للاستشارات المالية",
+      "to_robot_name_en": "AI Financial Consulting Center",
+      "message_ar": "@المستشار_المالي تم إنشاء مهمة المتابعة وحجز موعد الاتصال بالعميل \"خليل اليافعي\". يرجى تدقيق الشروط المالية وتقدير التدفق المالي وهامش الربحية.",
+      "message_en": "@AI_Treasurer Urgent follow-up task registered on CRM calendar. Please audit financial terms and forecast margin profitability.",
+      "action_taken_ar": "إنشاء وتعيين مهمة متابعة عاجلة للمشروع",
+      "action_taken_en": "Created and assigned urgent calendar follow-up task",
+      "target_entity": "خليل اليافعي",
+      "created_at": "2026-10-02T20:23:00.199Z"
+    },
+    {
+      "id": "collab-init-4",
+      "workflow_id": "wf-swarm-initial",
+      "step_number": 4,
+      "from_robot_id": "robot-financial-analyst",
+      "from_robot_name_ar": "مركز الذكاء الاصطناعي للاستشارات المالية",
+      "from_robot_name_en": "AI Financial Consulting Center",
+      "to_robot_id": "robot-retention-predictor",
+      "to_robot_name_ar": "روبوت استبقاء المشتركين وترقيات العقود",
+      "to_robot_name_en": "AI Retention & Contract Expansion Engine",
+      "message_ar": "@حارس_الاستبقاء_والتوسع تم التدقيق المالي للصفقة بنجاح: التدفق النقدي إيجابي بمبلغ 86,250 ر.س (شامل الضريبة) بهامش ربح 35%. يرجى إدراج الحساب تحت رادار المراقبة.",
+      "message_en": "@AI_Retention Financial check complete: positive net cashflow 86,250 SAR with 35% margin. Please arm expansion radar.",
+      "action_taken_ar": "تدقيق الجدارة الائتمانية والتدفق المالي وحساب الضريبة",
+      "action_taken_en": "Audited cashflow and validated profitability margins",
+      "target_entity": "خليل اليافعي",
+      "created_at": "2026-10-02T20:41:00.199Z"
+    },
+    {
+      "id": "collab-init-5",
+      "workflow_id": "wf-swarm-initial",
+      "step_number": 5,
+      "from_robot_id": "robot-retention-predictor",
+      "from_robot_name_ar": "روبوت استبقاء المشتركين وترقيات العقود",
+      "from_robot_name_en": "AI Retention & Contract Expansion Engine",
+      "to_robot_id": "robot-leads-qualifier",
+      "to_robot_name_ar": "مساعد تأهيل صفقات المبيعات",
+      "to_robot_name_en": "AI Leads Qualifier Agent",
+      "message_ar": "🏁 تم اكتمال دورة الفريق الافتراضي بنجاح! تم تأمين العقد وجدولة المتابعة مع تجهيز فرصة ترقية توسعية مستقبلية بقيمة 22,500 ر.س.",
+      "message_en": "🏁 Swarm cycle completed successfully! Follow-up locked and 22,500 SAR expansion opportunity queued.",
+      "action_taken_ar": "تسجيل فرصة بيع استباقية وتأكيد اكتمال الدورة الشاملة",
+      "action_taken_en": "Queued expansion opportunity and confirmed full cycle completion",
+      "target_entity": "خليل اليافعي",
+      "created_at": "2026-10-02T20:53:00.199Z"
+    }
+  ]
+}
